@@ -1,14 +1,14 @@
 import React from "react";
 import "./Modal.css";
 
-function Modal({ setOpenModal }) {
+function Modal({ closeModal }) {
   return (
     <div className="modalBackground">
       <div className="modalContainer">
         <div className="titleCloseBtn">
           <button
             onClick={() => {
-              setOpenModal(false);
+              closeModal();
             }}
           >
             X
@@ -23,7 +23,7 @@ function Modal({ setOpenModal }) {
         <div className="footer">
           <button
             onClick={() => {
-              setOpenModal(false);
+              closeModal();
             }}
             id="cancelBtn"
           >

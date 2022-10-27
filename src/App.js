@@ -18,7 +18,8 @@ function App() {
         Open
       </button>
 
-      {modalOpen && <Modal setOpenModal={setModalOpen} />}
+      {/* {modalOpen && <Modal setOpenModal={setModalOpen} />} */}
+      {modalOpen && <Modal closeModal={() => setModalOpen(false)} />}
 
       <Extbtn />
     </div>

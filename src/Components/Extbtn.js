@@ -1,13 +1,13 @@
 import React from "react";
 import "./Modal.css";
 
-function Exbtn({ setOpenModal }) {
+function Exbtn({ closeModal }) {
   return (
 
         <div className="titleCloseBtn">
           <button
             onClick={() => {
-              setOpenModal(true);
+              closeModal();
             }}
           >
             X
